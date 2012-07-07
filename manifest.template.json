@@ -3,7 +3,7 @@
   "version": "1.0", 
   "manifest_version": 2, 
   "description": "Discover Khan Academy videos and exercises from within Wikipedia", 
-  "homepage_url": "http://dylanv.org", 
+  "homepage_url": "http://github.com/dylanvee/Khanpedia", 
   "content_scripts": [
     {
       "matches": ["http://en.wikipedia.org/wiki/*"], 
