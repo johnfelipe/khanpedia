@@ -1,0 +1,5 @@
+Khanpedia is a [Google Chrome extension](http://code.google.com/chrome/extensions/index.html) that integrates [Khan Academy](http://khanacademy.org) content (videos and [exercises](http://www.khanacademy.org/exercisedashboard)) into Wikipedia. With the extension installed, clicking certain links on Wikipedia (the green ones!) will present the user with the option of viewing that topic on Khan Academy or on Wikipedia. 
+
+Khanpedia ships with its own index of Khan Academy content, generated from the company's [public API](https://github.com/Khan/khan-api/wiki/Khan-Academy-API). This makes the extension relatively fast and light, and while it will almost certainly get outdated regularly I will update the extension through the Chrome Web Store as needed to mitigate that. 
+
+Khanpedia is a project from Khan Academy's first inaugural Healthy Hackathon. While I hope you find it fun to use, it is an unofficial intern hackathon project and I make no guarantees about its correctness or utility. With that in mind, it's kinda fun. 

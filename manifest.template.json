@@ -1,0 +1,22 @@
+{
+  "name": "Khanpedia", 
+  "version": "1.0", 
+  "manifest_version": 2, 
+  "description": "Discover Khan Academy videos and exercises from within Wikipedia", 
+  "homepage_url": "http://dylanv.org", 
+  "content_scripts": [
+    {
+      "matches": ["http://en.wikipedia.org/wiki/*"], 
+      "css": ["css/khanpedia.css", "css/bootstrap.min.css"], 
+      "js": ["js/jquery-1.7.2.min.js", "js/bootstrap.min.js", "js/khanpedia.js", "js/handlebars-1.0.0.beta.6.js"]
+    }
+  ], 
+  "web_accessible_resources": [
+    "khantent.json", 
+    "img/khan.png", 
+    "img/wiki.png"
+  ], 
+  "icons": {
+    "128": "img/logo.png"
+  }
+}

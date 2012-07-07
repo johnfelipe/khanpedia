@@ -1,0 +1,32 @@
+#page_link
+{
+  color: green;
+}
+
+#khan_img
+{
+  height: 175px;
+  float: left;
+}
+
+#wiki_img
+{
+  padding-top: 10px;
+  height: 135px; 
+  float: right;
+}
+
+.khantent
+{
+  color: green;
+}
+
+.popover-title
+{
+  display: none;
+}
+
+.popover-content
+{
+  background-color: transparent !important;
+}
