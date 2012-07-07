@@ -12,7 +12,6 @@ is related to any videos or exercises. The source data is from the topic tree
 public API method."""
 
 API_ENDPOINT = "http://khanacademy.org/api/v1/topictree"
-BASE_VERSION = "1.0"
       
 def parse(tree, stopwords, data={}):
   children = tree.get("children")
@@ -52,12 +51,12 @@ def main():
   with open("manifest.template.json") as f: 
     manifest = json.loads(f.read())
   # http://code.google.com/chrome/extensions/manifest.html#version
-  version_format = "%-y%-m.%-d%-H.%-M%-S"
-  manifest["version"] = datetime.strftime(datetime.today(), version_format)
+  version = datetime.strftime(datetime.today(), "%-y%-m.%-d%-H.%-M%-S")
+  manifest["version"] = version
   with open("extension/manifest.json", 'w') as f: 
     f.write(json.dumps(manifest))
 
-  print "Creating archive for Chrome Web Store"
+  print "Creating archive of version %s" % version
   shutil.make_archive("khanpedia", "zip", "extension")
   
 if __name__ == '__main__':
