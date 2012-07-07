@@ -26,6 +26,7 @@ def parse(tree, stopwords, data={}):
   elif kind == "Exercise": 
     keywords = tree["display_name"].split()
   keywords = filter(lambda k: k not in stopwords, keywords)
+  keywords = filter(lambda k: len(k) >= 4, keywords)
   for keyword in keywords: 
     data[keyword] = 1
   return data
