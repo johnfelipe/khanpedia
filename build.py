@@ -55,7 +55,7 @@ def main():
     manifest = json.loads(f.read())
   # http://code.google.com/chrome/extensions/manifest.html#version
   # TODO(dylan): I'm not totally sure that this solves auto-versioning
-  version = datetime.strftime(datetime.today(), "%-y%-m.%-d%-H.%-M%-S")
+  version = datetime.strftime(datetime.today(), "%-y%m.%-d%-H.%-M%-S")
   manifest["version"] = version
   with open("extension/manifest.json", 'w') as f:
     f.write(json.dumps(manifest))
